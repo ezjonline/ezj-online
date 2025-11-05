@@ -220,7 +220,7 @@ body {
 .marquee { position: relative; width: 100%; }
 .marquee + .marquee { margin-top: 10px; }
 .marquee-mask { max-width: 1120px; margin: 0 auto; padding: 0 20px; mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 7.5%, rgba(0,0,0,1) 92.5%, rgba(0,0,0,0) 100%); -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 7.5%, rgba(0,0,0,1) 92.5%, rgba(0,0,0,0) 100%); overflow: hidden; }
-.marquee-track { display: flex; gap: 10px; align-items: center; list-style: none; padding: 10px 0; margin: 0; width: max-content; }
+.marquee-track { display: flex; gap: 10px; align-items: center; list-style: none; padding: 10px 0; margin: 0; width: max-content; will-change: transform; }
 .tool-pill { flex: 0 0 auto; height: 76px; min-width: 120px; border-radius: 14px; background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0)); border: 1px solid rgba(255,255,255,0.08); display: grid; place-items: center; }
 .tool-pill img { max-height: 36px; max-width: 80%; object-fit: contain; opacity: 0.95; transition: opacity 160ms ease; }
 .tool-pill:hover img { opacity: 1; }
@@ -280,6 +280,7 @@ body {
   pointer-events: none;
   box-shadow: 0 0 15px rgba(99,78,233,0), 0 0 25px rgba(99,78,233,0);
   animation: sequential-glow 6s ease-in-out infinite;
+  will-change: opacity, box-shadow;
 }
 .what-col.blue::before {
   animation-delay: 0s;
@@ -320,7 +321,7 @@ body {
 .what-item { display: flex; align-items: center; gap: 12px; padding: 12px 14px; min-height: 52px; border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; background: rgba(255,255,255,0.02); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); text-align: left; transition: all 0.2s ease; }
 .what-item span { flex: 1; }
 .what-item:hover { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.12); transform: translateX(4px); }
-.what-item-icon { width: 20px; height: 20px; flex-shrink: 0; object-fit: contain; display: block; image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges; transform: translateZ(0); filter: brightness(0) invert(1); }
+.what-item-icon { width: 20px; height: 20px; flex-shrink: 0; object-fit: contain; display: block; image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges; transform: translateZ(0); filter: brightness(0) invert(1); content-visibility: auto; }
 .what-item span { color: var(--text); font-size: 15px; font-weight: 500; letter-spacing: -0.02em; line-height: 1.4; }
 .section-what .section-subtitle { margin-left: auto; margin-right: auto; max-width: 800px; }
 
@@ -416,7 +417,7 @@ body {
   bottom: 0;
   background: linear-gradient(to top, var(--bg), transparent);
 }
-.reviews-track { display: flex; flex-direction: column; gap: 24px; width: 100%; }
+.reviews-track { display: flex; flex-direction: column; gap: 24px; width: 100%; will-change: transform; }
 .reviews-track-up { animation: reviews-scroll-up 40s linear infinite; }
 .reviews-track-down { animation: reviews-scroll-down 40s linear infinite; }
 @keyframes reviews-scroll-up {
@@ -481,16 +482,16 @@ body {
 .cta-title { font-family: 'Figtree', sans-serif; font-size: 48px; margin: 0 0 20px; font-weight: bold; letter-spacing: -0.04em; line-height: 1.1; text-shadow: 0 0 30px rgba(99,78,233,0.2), 0 0 60px rgba(99,78,233,0.1); }
 .section-cta .section-subtitle { font-size: 18px; line-height: 1.7; margin-bottom: 32px; max-width: 500px; }
 .trust-badges { display: flex; gap: 12px; list-style: none; padding: 0; margin: 0 0 40px; flex-wrap: wrap; }
-.trust-badges li { font-size: 14px; color: var(--text); padding: 10px 16px; border: 1px solid rgba(99,78,233,0.4); border-radius: 999px; background: rgba(99,78,233,0.15); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(99,78,233,0.25), 0 0 8px rgba(99,78,233,0.2); }
-.trust-badges li:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(99,78,233,0.35), 0 0 12px rgba(99,78,233,0.3); }
-.cal-embed-container { 
-  position: relative; 
-  min-height: 600px; 
-  max-height: 800px; 
-  border-radius: 20px; 
-  overflow: hidden; 
-  background: rgba(255,255,255,0.03); 
-  border: 1px solid rgba(99,78,233,0.4); 
+.trust-badges li { font-size: 14px; color: var(--text); padding: 10px 16px; border: 1px solid rgba(99,78,233,0.4); border-radius: 999px; background: rgba(99,78,233,0.15); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+.trust-badges li:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+.cal-embed-container {
+  position: relative;
+  min-height: 600px;
+  max-height: 800px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(99,78,233,0.4);
   backdrop-filter: blur(20px); 
   -webkit-backdrop-filter: blur(20px); 
   box-shadow: 0 8px 32px rgba(0,0,0,0.3), 0 0 0 1px rgba(99,78,233,0.2), inset 0 1px 0 rgba(255,255,255,0.1), 0 0 20px rgba(99,78,233,0.15); 
@@ -501,6 +502,7 @@ body {
   box-sizing: border-box; 
   padding: 0;
   margin: 0;
+  will-change: box-shadow;
 }
 .cal-embed-container::before {
   content: "";
@@ -512,6 +514,19 @@ body {
   pointer-events: none;
   box-shadow: 0 0 25px rgba(99,78,233,0);
   animation: pulse-glow-shadow 3s ease-in-out infinite;
+}
+.cal-embed-container::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 12px;
+  background: rgba(255,255,255,0.03);
+  z-index: 10;
+  pointer-events: none;
+  border-radius: 0 20px 20px 0;
+  box-shadow: inset -2px 0 4px rgba(0,0,0,0.3);
 }
 @keyframes pulse-glow {
   0%, 100% {
@@ -532,13 +547,13 @@ body {
   }
 }
 .cal-embed-container:hover { 
-  border-color: rgba(99,78,233,0.5); 
+  border-color: rgba(99,78,233,0.45); 
   animation: none;
-  box-shadow: 0 12px 40px rgba(0,0,0,0.4), 0 0 0 1px rgba(99,78,233,0.3), inset 0 1px 0 rgba(255,255,255,0.15), 0 0 40px rgba(99,78,233,0.35);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3), 0 0 0 1px rgba(99,78,233,0.25), inset 0 1px 0 rgba(255,255,255,0.1), 0 0 25px rgba(99,78,233,0.2);
 }
 .cal-embed-container:hover::before {
   animation: none;
-  box-shadow: 0 0 30px rgba(99,78,233,0.4), 0 0 50px rgba(99,78,233,0.3);
+  box-shadow: 0 0 20px rgba(99,78,233,0.25), 0 0 35px rgba(99,78,233,0.15);
 }
 .cal-embed-container #my-cal-inline-15min { 
   min-height: 600px; 
@@ -554,6 +569,9 @@ body {
   display: block;
   -webkit-overflow-scrolling: touch;
   border-radius: 20px;
+  left: 0;
+  transform: translateX(0);
+  background: transparent;
 }
 
 /* Custom scrollbar styling for Cal.com embed */
@@ -561,9 +579,10 @@ body {
   width: 8px;
 }
 .cal-embed-container #my-cal-inline-15min::-webkit-scrollbar-track {
-  background: rgba(255,255,255,0.05);
+  background: transparent;
   border-radius: 0 20px 20px 0;
   margin: 0;
+  border-left: none;
 }
 .cal-embed-container #my-cal-inline-15min::-webkit-scrollbar-thumb {
   background: rgba(99,78,233,0.4);
@@ -574,7 +593,7 @@ body {
 }
 .cal-embed-container #my-cal-inline-15min {
   scrollbar-width: thin;
-  scrollbar-color: rgba(99,78,233,0.4) rgba(255,255,255,0.05);
+  scrollbar-color: rgba(99,78,233,0.4) transparent;
 }
 .cal-embed-container #my-cal-inline-15min > *,
 .cal-embed-container #my-cal-inline-15min > * > * {
@@ -582,11 +601,15 @@ body {
   max-width: 100% !important;
   box-sizing: border-box !important;
   border-radius: 20px;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  left: 0 !important;
 }
 .cal-embed-container iframe,
 .cal-embed-container embed,
 .cal-embed-container object { 
   border: none !important; 
+  border-left: none !important;
   width: 100% !important; 
   max-width: 100% !important; 
   box-sizing: border-box !important; 
@@ -596,17 +619,24 @@ body {
   overflow: hidden !important;
   height: 100%;
   border-radius: 20px;
+  left: 0 !important;
+  transform: translateX(0) !important;
+  outline: none !important;
 }
 .cal-embed-container [class*="cal"],
 .cal-embed-container [id*="cal"] {
   max-width: 100% !important;
   box-sizing: border-box !important;
   overflow-x: hidden !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
 }
 .cal-embed-container #my-cal-inline-15min > div,
 .cal-embed-container #my-cal-inline-15min > div > * {
   border-radius: 20px !important;
   overflow: hidden;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
 }
 
 /* Cal.com embed mobile adjustments */
@@ -685,16 +715,17 @@ body {
   .section-subtitle { font-size: 15px; margin-bottom: 20px; }
   .section-brands .section-subtitle { display: none; }
   .section-brands .section-title { margin-bottom: 32px; }
-  .hero-title { font-size: 36px; line-height: 1.1; white-space: normal; }
-  .hero-dynamic-text { min-width: 140px; font-size: 36px; white-space: nowrap; }
-  .hero-subtitle { font-size: 16px; max-width: 100%; padding: 0 10px; }
+  .hero-title { font-size: 44px; line-height: 1.1; white-space: normal; padding: 0 20px; }
+  .hero-dynamic-text { min-width: 140px; font-size: 44px; white-space: nowrap; }
+  .hero-subtitle { font-size: 16px; max-width: 100%; padding: 0 20px; }
   .cta-title { font-size: 32px; }
   
   .section-hero { min-height: 100vh; height: 100vh; overflow: visible; display: flex; align-items: center; justify-content: center; }
-  .hero-inner { padding: 0; width: 100%; }
+  .hero-inner { padding: 0 24px; width: 100%; max-width: 100%; box-sizing: border-box; }
   .hero-video { object-fit: cover; }
   .section-hero::after { bottom: -120px; height: 120px; }
   .section-problems { padding: 60px 0; padding-top: 204px; margin-top: -120px; }
+  .hero-title { font-size: 42px; padding: 0 16px; }
   .hero-subtitle { font-size: 0; position: relative; }
   .hero-subtitle::after { 
     content: "Strategic automation that adds 20+ hours back to your week.";
@@ -703,7 +734,7 @@ body {
     line-height: 1.7;
     display: block;
     max-width: 100%;
-    padding: 0 10px;
+    padding: 0 16px;
     margin: 0 auto 28px;
   }
   .section-tools { padding: 56px 0; }
@@ -770,10 +801,11 @@ body {
   .cta-title { font-size: 28px; }
   
   .section-hero { min-height: 100vh; height: 100vh; overflow: visible; display: flex; align-items: center; justify-content: center; }
-  .hero-inner { padding: 0; width: 100%; }
+  .hero-inner { padding: 0 20px; width: 100%; max-width: 100%; box-sizing: border-box; }
   .hero-video { object-fit: cover; }
   .section-hero::after { bottom: -100px; height: 100px; }
   .section-problems { padding: 50px 0; padding-top: 184px; margin-top: -100px; }
+  .hero-title { font-size: 32px; padding: 0 12px; }
   .hero-subtitle { font-size: 0; position: relative; }
   .hero-subtitle::after { 
     content: "Strategic automation that adds 20+ hours back to your week.";
@@ -782,7 +814,7 @@ body {
     line-height: 1.6;
     display: block;
     max-width: 100%;
-    padding: 0 10px;
+    padding: 0 12px;
     margin: 0 auto 28px;
   }
   .section-tools { padding: 48px 0; }
@@ -854,11 +886,11 @@ body {
   .container { padding: 0 14px; }
   
   .section-hero { min-height: 100vh; height: 100vh; overflow: visible; display: flex; align-items: center; justify-content: center; }
-  .hero-inner { padding: 0; width: 100%; }
+  .hero-inner { padding: 0 16px; width: 100%; max-width: 100%; box-sizing: border-box; }
   .section-hero::after { bottom: -80px; height: 80px; }
   .section-problems { margin-top: -80px; padding-top: 164px; }
-  .hero-title { font-size: 24px; white-space: normal; }
-  .hero-dynamic-text { min-width: 80px; font-size: 24px; white-space: nowrap; }
+  .hero-title { font-size: 28px; white-space: normal; padding: 0 8px; }
+  .hero-dynamic-text { min-width: 80px; font-size: 28px; white-space: nowrap; }
   .hero-subtitle { font-size: 0; position: relative; }
   .hero-subtitle::after { 
     content: "Strategic automation that adds 20+ hours back to your week.";
@@ -867,7 +899,7 @@ body {
     line-height: 1.6;
     display: block;
     max-width: 100%;
-    padding: 0 5px;
+    padding: 0 8px;
     margin: 0 auto 28px;
   }
   
@@ -897,7 +929,5 @@ body {
   .hero-video { image-rendering: -webkit-optimize-contrast; }
 }
 
-/* Scroll reveal */
-.reveal { opacity: 0; transform: translateY(14px); transition: opacity 500ms ease, transform 500ms ease; }
-.reveal-in { opacity: 1; transform: translateY(0); }
+/* Scroll reveal - removed as unused */
 

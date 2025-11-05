@@ -60,20 +60,11 @@ document.addEventListener('click', (e) => {
   }
 });
 
-// Calendly popup (replace with your Calendly link)
-const calendlyBtn = document.getElementById('calendly-btn');
-if (calendlyBtn) {
-  calendlyBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    const link = 'https://calendly.com/your-calendly-slug/free-consultation'; // TODO: replace
-    window.open(link, '_blank', 'noopener,noreferrer');
-  });
-}
-
-// Header scroll effect
+// Header scroll effect with debouncing
 const header = document.querySelector('.site-header');
 const heroSection = document.querySelector('.section-hero');
 if (header && heroSection) {
+  let ticking = false;
   const handleScroll = () => {
     const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
     if (window.scrollY > heroBottom - 100) {
@@ -81,24 +72,15 @@ if (header && heroSection) {
     } else {
       header.classList.remove('scrolled');
     }
+    ticking = false;
   };
-  window.addEventListener('scroll', handleScroll);
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(handleScroll);
+      ticking = true;
+    }
+  }, { passive: true });
   handleScroll(); // Check initial state
 }
-
-// Subtle on-scroll reveal animations
-const observer = new IntersectionObserver((entries) => {
-  for (const entry of entries) {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('reveal-in');
-      observer.unobserve(entry.target);
-    }
-  }
-}, { threshold: 0.12 });
-
-document.querySelectorAll('.section-title, .service-card, .stat, .problem-card, .testimonial-card, .compare-col, .step').forEach((el) => {
-  el.classList.add('reveal');
-  observer.observe(el);
-});
 
 
