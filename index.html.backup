@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EZJ Online</title>
+    <meta name="description"
+        content="Strategic automation that adds 20+ hours back to your week and streamlines your entire funnel - from lead to loyal customer.">
+    <link rel="preconnect" href="https://app.cal.com">
+    <link rel="dns-prefetch" href="https://app.cal.com">
+    <link rel="preload" href="./assets/figtree.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./assets/logo.png" as="image">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./assets/logotab.png">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <img src="./assets/logo.png" alt="EZJ Online" class="brand-logo" />
+            </div>
+            <nav class="nav">
+                <a href="https://calendly.com/ezj/strategy-session?utm_source=website&utm_medium=button&utm_campaign=menu&utm_term=book-consultation"
+                    class="nav-cta" target="_blank" rel="noopener noreferrer">Book Consultation</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="section-hero" id="hero">
+            <div class="hero-bg">
+                <video class="hero-video" src="./assets/wavebackground.mp4" autoplay muted loop playsinline
+                    preload="metadata" poster="./assets/waveframe.png"></video>
+            </div>
+            <div class="container hero-inner">
+                <h1 class="hero-title">Scale Your Business <span class="hero-dynamic-text" id="dynamic-text"></span>
+                </h1>
+                <p class="hero-subtitle">We build AI infrastructures that save time, reduce manual work, and simplify
+                    operations.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Book Your Free Consultation</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Problems We Solve (replaces sections between hero and tools) -->
+        <section class="section-problems" id="problems">
+            <div class="problems-bg"></div>
+            <div class="container">
+                <div class="problems-label">Problems We Solve</div>
+                <h2 class="section-title">The operations we <span style="color: #F47C20;">automate</span> for growing
+                    organizations</h2>
+                <p class="section-subtitle">We build AI Growth Infrastructures that eliminate the bottlenecks in your
+                    company
+                </p>
+                <div class="problems-grid">
+                    <div class="problem-item">
+                        <img src="./assets/glow.png" alt="" class="pi-icon" aria-hidden="true" loading="lazy" width="24"
+                            height="24">
+                        <div>
+                            <h3 class="pi-title">Spending too much time creating content?</h3>
+                            <p class="muted">We build AI content systems that produce consistent output while you focus
+                                on strategy.<br><strong>Outcome:</strong> 10+ hours saved weekly, consistent publishing
+                                schedule.</p>
+                        </div>
+                    </div>
+                    <div class="problem-item">
+                        <img src="./assets/glow.png" alt="" class="pi-icon" aria-hidden="true" loading="lazy" width="24"
+                            height="24">
+                        <div>
+                            <h3 class="pi-title">Revenue growth stalling without more headcount?</h3>
+                            <p class="muted">We install AI operations that scale your output without scaling your
+                                payroll.<br><strong>Outcome:</strong> 3x capacity with the same team size.</p>
+                        </div>
+                    </div>
+                    <div class="problem-item">
+                        <img src="./assets/glow.png" alt="" class="pi-icon" aria-hidden="true" loading="lazy" width="24"
+                            height="24">
+                        <div>
+                            <h3 class="pi-title">Qualified leads not converting into calls?</h3>
+                            <p class="muted">We automate DM nurture sequences and community engagement to warm leads
+                                before they book.<br><strong>Outcome:</strong> 40% more qualified calls, higher show
+                                rates.</p>
+                        </div>
+                    </div>
+                    <div class="problem-item">
+                        <img src="./assets/glow.png" alt="" class="pi-icon" aria-hidden="true" loading="lazy" width="24"
+                            height="24">
+                        <div>
+                            <h3 class="pi-title">Not sure which AI tools actually work?</h3>
+                            <p class="muted">We design custom AI infrastructure built for your specific business model
+                                and growth stage.<br><strong>Outcome:</strong> Clear systems that integrate seamlessly.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="problem-item">
+                        <img src="./assets/glow.png" alt="" class="pi-icon" aria-hidden="true" loading="lazy" width="24"
+                            height="24">
+                        <div>
+                            <h3 class="pi-title">Operations feel chaotic and reactive?</h3>
+                            <p class="muted">We install structured workflows that turn chaos into predictable
+                                systems.<br><strong>Outcome:</strong> Repeatable processes that compound over time.</p>
+                        </div>
+                    </div>
+                    <div class="problem-item">
+                        <img src="./assets/glow.png" alt="" class="pi-icon" aria-hidden="true" loading="lazy" width="24"
+                            height="24">
+                        <div>
+                            <h3 class="pi-title">Worried about reliability as you scale?</h3>
+                            <p class="muted">We build with redundancy and monitoring so your infrastructure stays stable
+                                through growth.<br><strong>Outcome:</strong> Systems that run consistently without
+                                constant oversight.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools / Stack -->
+        <section class="section-tools" id="tools">
+            <div class="tools-bg"></div>
+            <div class="container">
+                <h2 class="section-title">Experts in the world's leading platforms</h2>
+                <p class="section-subtitle">Best-in-class platforms to architect reliable, scalable automation systems.
+                </p>
+            </div>
+            <div class="tools-marquees container">
+                <!-- Marquee Row A -->
+                <div class="marquee" aria-hidden="true">
+                    <div class="marquee-mask">
+                        <ul class="marquee-track marquee-left">
+                            <!-- group A - only provided files -->
+                            <li class="tool-pill"><img src="./assets/tools/asana.webp" alt="Asana" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/activecampaign.png" alt="ActiveCampaign"
+                                    loading="lazy" width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/clickup.png" alt="ClickUp" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/aws.png" alt="AWS" loading="lazy" width="80"
+                                    height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/azure.png" alt="Azure" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/googlecloud.png" alt="Google Cloud"
+                                    loading="lazy" width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/airtable.webp" alt="Airtable" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/loom1.png" alt="Loom" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/make.png" alt="Make" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/mongodb.svg" alt="MongoDB" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/n8n.webp" alt="n8n" loading="lazy" width="80"
+                                    height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/notion.png" alt="Notion" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/supabase.png" alt="Supabase" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/postgres.png" alt="PostgreSQL" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/pipedrive.webp" alt="Pipedrive"
+                                    loading="lazy" width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/pinecone.png" alt="Pinecone" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/vapi.png" alt="Vapi" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/zapier.png" alt="Zapier" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/slack.png" alt="Slack" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/zoom.png" alt="Zoom" loading="lazy"
+                                    width="80" height="40"></li>
+                            <!-- duplicate for seamless loop -->
+                            <li class="tool-pill"><img src="./assets/tools/asana.webp" alt="Asana" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/activecampaign.png" alt="ActiveCampaign"
+                                    loading="lazy" width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/clickup.png" alt="ClickUp" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/aws.png" alt="AWS" loading="lazy" width="80"
+                                    height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/azure.png" alt="Azure" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/googlecloud.png" alt="Google Cloud"
+                                    loading="lazy" width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/airtable.webp" alt="Airtable" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/loom1.png" alt="Loom" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/make.png" alt="Make" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/mongodb.svg" alt="MongoDB" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/n8n.webp" alt="n8n" loading="lazy" width="80"
+                                    height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/notion.png" alt="Notion" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/supabase.png" alt="Supabase" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/postgres.png" alt="PostgreSQL" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/pipedrive.webp" alt="Pipedrive"
+                                    loading="lazy" width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/pinecone.png" alt="Pinecone" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/vapi.png" alt="Vapi" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/zapier.png" alt="Zapier" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/slack.png" alt="Slack" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/zoom.png" alt="Zoom" loading="lazy"
+                                    width="80" height="40"></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Marquee Row B -->
+                <div class="marquee" aria-hidden="true">
+                    <div class="marquee-mask">
+                        <ul class="marquee-track marquee-right">
+                            <!-- group B - only provided files -->
+                            <li class="tool-pill"><img src="./assets/tools/salesforce.png" alt="Salesforce"
+                                    loading="lazy" width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/hubspot.webp" alt="HubSpot" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/googledrive.webp" alt="Google Drive"
+                                    loading="lazy" width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/slack1.png" alt="Slack" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/zapier.png" alt="Zapier"></li>
+                            <li class="tool-pill"><img src="./assets/tools/airtable.webp" alt="Airtable"></li>
+                            <li class="tool-pill"><img src="./assets/tools/aws.png" alt="AWS"></li>
+                            <li class="tool-pill"><img src="./assets/tools/azure.png" alt="Azure"></li>
+                            <li class="tool-pill"><img src="./assets/tools/googlecloud.png" alt="Google Cloud"></li>
+                            <li class="tool-pill"><img src="./assets/tools/notion.png" alt="Notion"></li>
+                            <li class="tool-pill"><img src="./assets/tools/make.png" alt="Make"></li>
+                            <li class="tool-pill"><img src="./assets/tools/zoom.png" alt="Zoom"></li>
+                            <!-- duplicate for seamless loop -->
+                            <li class="tool-pill"><img src="./assets/tools/salesforce.png" alt="Salesforce"
+                                    loading="lazy" width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/hubspot.webp" alt="HubSpot" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/googledrive.webp" alt="Google Drive"
+                                    loading="lazy" width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/slack1.png" alt="Slack" loading="lazy"
+                                    width="80" height="40"></li>
+                            <li class="tool-pill"><img src="./assets/tools/zapier.png" alt="Zapier"></li>
+                            <li class="tool-pill"><img src="./assets/tools/airtable.webp" alt="Airtable"></li>
+                            <li class="tool-pill"><img src="./assets/tools/aws.png" alt="AWS"></li>
+                            <li class="tool-pill"><img src="./assets/tools/azure.png" alt="Azure"></li>
+                            <li class="tool-pill"><img src="./assets/tools/googlecloud.png" alt="Google Cloud"></li>
+                            <li class="tool-pill"><img src="./assets/tools/notion.png" alt="Notion"></li>
+                            <li class="tool-pill"><img src="./assets/tools/make.png" alt="Make"></li>
+                            <li class="tool-pill"><img src="./assets/tools/zoom.png" alt="Zoom"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What We Do (Assess → Implement → Refine) -->
+        <section class="section-what" id="what">
+            <div class="what-bg"></div>
+            <div class="container">
+                <div class="what-label">What We Do</div>
+                <h2 class="section-title">Smart systems built for your real‑world business needs</h2>
+                <p class="section-subtitle">We architect scalable solutions using our proven <strong>Assess</strong> →
+                    <strong>Implement</strong> → <strong>Refine</strong> framework to maximize impact.
+                </p>
+
+                <div class="what-card">
+                    <div class="what-grid">
+                        <!-- Assess -->
+                        <div class="what-col blue">
+                            <div class="what-head blue">
+                                <span class="what-head-title">Assess</span>
+                                <img src="./assets/icons/next.png" alt="" class="what-head-icon what-head-icon-blue"
+                                    loading="lazy" width="24" height="24">
+                            </div>
+                            <ul class="what-list">
+                                <li class="what-item blue">
+                                    <img src="./assets/icons/Requirements gathering.png" alt="" class="what-item-icon"
+                                        loading="lazy" width="20" height="20">
+                                    <span>Requirements gathering</span>
+                                </li>
+                                <li class="what-item blue">
+                                    <img src="./assets/icons/Process mapping.png" alt="" class="what-item-icon"
+                                        loading="lazy" width="20" height="20">
+                                    <span>Process mapping</span>
+                                </li>
+                                <li class="what-item blue">
+                                    <img src="./assets/icons/Automation roadmap creation.png" alt=""
+                                        class="what-item-icon" loading="lazy" width="20" height="20">
+                                    <span>Automation roadmap creation</span>
+                                </li>
+                                <li class="what-item blue">
+                                    <img src="./assets/icons/Weekly strategy calls.png" alt="" class="what-item-icon"
+                                        loading="lazy" width="20" height="20">
+                                    <span>Weekly strategy calls</span>
+                                </li>
+                                <li class="what-item blue">
+                                    <img src="./assets/icons/API and AI research.png" alt="" class="what-item-icon"
+                                        loading="lazy" width="20" height="20">
+                                    <span>API and AI research</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Implement -->
+                        <div class="what-col green">
+                            <div class="what-head green">
+                                <span class="what-head-title">Implement</span>
+                                <img src="./assets/icons/next.png" alt="" class="what-head-icon what-head-icon-green"
+                                    loading="lazy" width="24" height="24">
+                            </div>
+                            <ul class="what-list">
+                                <li class="what-item green">
+                                    <img src="./assets/icons/Automation workflows (Make.com).png" alt=""
+                                        class="what-item-icon" loading="lazy" width="20" height="20">
+                                    <span>Automation workflows</span>
+                                </li>
+                                <li class="what-item green">
+                                    <img src="./assets/icons/AI agent and assistant development.png" alt=""
+                                        class="what-item-icon" loading="lazy" width="20" height="20">
+                                    <span>AI agent development</span>
+                                </li>
+                                <li class="what-item green">
+                                    <img src="./assets/icons/CRM setup and customisation.png" alt=""
+                                        class="what-item-icon" loading="lazy" width="20" height="20">
+                                    <span>CRM setup and customisation</span>
+                                </li>
+                                <li class="what-item green">
+                                    <img src="./assets/icons/Email marketing automation.png" alt=""
+                                        class="what-item-icon" loading="lazy" width="20" height="20">
+                                    <span>Email marketing automation</span>
+                                </li>
+                                <li class="what-item green">
+                                    <img src="./assets/icons/Internal app development.png" alt="" class="what-item-icon"
+                                        loading="lazy" width="20" height="20">
+                                    <span>Internal app development</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Refine -->
+                        <div class="what-col purple">
+                            <div class="what-head purple">
+                                <span class="what-head-title">Refine</span>
+                                <img src="./assets/icons/refresh.png" alt=""
+                                    class="what-head-icon what-head-icon-purple" loading="lazy" width="24" height="24">
+                            </div>
+                            <ul class="what-list">
+                                <li class="what-item purple">
+                                    <img src="./assets/icons/Reporting and analytics setup.png" alt=""
+                                        class="what-item-icon" loading="lazy" width="20" height="20">
+                                    <span>Reporting and analytics setup</span>
+                                </li>
+                                <li class="what-item purple">
+                                    <img src="./assets/icons/Custom dashboards.png" alt="" class="what-item-icon"
+                                        loading="lazy" width="20" height="20">
+                                    <span>Custom dashboards</span>
+                                </li>
+                                <li class="what-item purple">
+                                    <img src="./assets/icons/Regular automation and AI reviews.png" alt=""
+                                        class="what-item-icon" loading="lazy" width="20" height="20">
+                                    <span>Regular automation and AI reviews</span>
+                                </li>
+                                <li class="what-item purple">
+                                    <img src="./assets/icons/Monitoring and maintenance.png" alt=""
+                                        class="what-item-icon" loading="lazy" width="20" height="20">
+                                    <span>Monitoring and maintenance</span>
+                                </li>
+                                <li class="what-item purple">
+                                    <img src="./assets/icons/Error handling and optimisation.png" alt=""
+                                        class="what-item-icon" loading="lazy" width="20" height="20">
+                                    <span>Error handling and optimisation</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trusted By -->
+        <section class="section-brands" id="brands">
+            <div class="container">
+                <h2 class="section-title">Trusted by businesses around the world</h2>
+                <p class="section-subtitle">Over the years, we've partnered with numerous companies to help them build
+                    better businesses through strategic automation, software implementation, and expert consulting.</p>
+            </div>
+            <div class="brands-marquee">
+                <div class="marquee" aria-hidden="true">
+                    <div class="marquee-mask">
+                        <ul class="marquee-track marquee-left">
+                            <!-- Set 1 -->
+                            <li class="brand-item">
+                                <img src="./assets/brands/Capital Club White Logo (1).png" alt="Capital Club"
+                                    loading="lazy" width="120" height="40">
+                            </li>
+                            <li class="brand-item">
+                                <img src="./assets/brands/dji-logo.png" alt="DJI" loading="lazy" width="120"
+                                    height="40">
+                            </li>
+                            <li class="brand-item">
+                                <img src="./assets/brands/inner-circle.png" alt="Inner Circle" loading="lazy"
+                                    width="120" height="40">
+                            </li>
+                            <li class="brand-item">
+                                <img src="./assets/brands/pelican-logo.png" alt="Pelican" loading="lazy" width="120"
+                                    height="40">
+                            </li>
+                            <li class="brand-item">
+                                <img src="./assets/brands/nike-logo.png" alt="Nike" loading="lazy" width="120"
+                                    height="40">
+                            </li>
+                            <li class="brand-item">
+                                <img src="./assets/brands/unm-logo.png" alt="UNM" loading="lazy" width="120"
+                                    height="40">
+                            </li>
+
+                            <!-- Set 2 -->
+                            <li class="brand-item">
+                                <img src="./assets/brands/Capital Club White Logo (1).png" alt="Capital Club"
+                                    loading="lazy" width="120" height="40">
+                            </li>
+                            <li class="brand-item">
+                                <img src="./assets/brands/dji-logo.png" alt="DJI" loading="lazy" width="120"
+                                    height="40">
+                            </li>
+                            <li class="brand-item">
+                                <img src="./assets/brands/inner-circle.png" alt="Inner Circle" loading="lazy"
+                                    width="120" height="40">
+                            </li>
+                            <li class="brand-item">
+                                <img src="./assets/brands/pelican-logo.png" alt="Pelican" loading="lazy" width="120"
+                                    height="40">
+                            </li>
+                            <li class="brand-item">
+                                <img src="./assets/brands/nike-logo.png" alt="Nike" loading="lazy" width="120"
+                                    height="40">
+                            </li>
+                            <li class="brand-item">
+                                <img src="./assets/brands/unm-logo.png" alt="UNM" loading="lazy" width="120"
+                                    height="40">
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Our Approach -->
+        <section class="section-approach" id="approach">
+            <div class="container">
+                <div class="approach-label">Our Approach</div>
+                <h2 class="section-title">Turn messy ops into a streamlined machine</h2>
+                <p class="section-subtitle">We eliminate bottlenecks and automate workflows so your business runs
+                    smoother.</p>
+
+                <div class="approach-grid">
+                    <!-- Card 1: Strategy & Diagnosis -->
+                    <div class="approach-card-large">
+                        <h3 class="approach-card-title">Strategy & Diagnosis</h3>
+                        <div class="approach-visual">
+                            <div class="visual-network">
+                                <div class="network-node"></div>
+                                <div class="network-node"></div>
+                                <div class="network-node"></div>
+                                <div class="network-node"></div>
+                                <div class="network-line"></div>
+                                <div class="network-line"></div>
+                                <div class="network-line"></div>
+                                <div class="network-line"></div>
+                            </div>
+                        </div>
+                        <p class="approach-card-desc">We audit your workflows to spot bottlenecks, map your customer
+                            flow, and build a custom roadmap for automation.</p>
+                    </div>
+
+                    <!-- Card 2: Automation & AI Execution -->
+                    <div class="approach-card-large">
+                        <h3 class="approach-card-title">Automation & AI Execution</h3>
+                        <div class="approach-visual">
+                            <div class="visual-code">
+                                <span class="code-line"><span class="code-keyword">class</span> Automation {</span>
+                                <span class="code-line">&nbsp;&nbsp;<span class="code-keyword">async</span> <span
+                                        class="code-func">run</span>() {</span>
+                                <span class="code-line code-typing">&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                        class="code-keyword">await</span> ai.connect();</span>
+                                <span class="code-line">&nbsp;&nbsp;}</span>
+                                <span class="code-line">}</span>
+                            </div>
+                        </div>
+                        <p class="approach-card-desc">We break down silos with seamless integrations and deploy smart AI
+                            assistants to handle repetitive work.</p>
+                    </div>
+
+                    <!-- Card 3: Maintenance & Scalability -->
+                    <div class="approach-card-large">
+                        <h3 class="approach-card-title">Maintenance & Scalability</h3>
+                        <div class="approach-visual">
+                            <div class="visual-dashboard">
+                                <div class="dash-item">
+                                    <div class="dash-icon"></div>
+                                    <div class="dash-line"></div>
+                                </div>
+                                <div class="dash-item">
+                                    <div class="dash-icon"></div>
+                                    <div class="dash-line"></div>
+                                </div>
+                                <div class="dash-item">
+                                    <div class="dash-icon"></div>
+                                    <div class="dash-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="approach-card-desc">We monitor, refine, and document everything so your stack stays
+                            clean, clear, and easy to scale.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews / Testimonials -->
+        <section class="section-reviews" id="reviews">
+            <div class="container">
+                <div class="reviews-label">Recent Testimonials</div>
+                <h2 class="section-title">Hear from our amazing clients</h2>
+
+                <div class="reviews-marquee">
+                    <div class="reviews-column reviews-column-left">
+                        <div class="reviews-track reviews-track-up">
+                            <!-- Review 1 -->
+                            <div class="review-card">
+                                <div class="review-stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                                <p class="review-text">"We knew we needed better systems but didn't know where to start.
+                                    Natural made the process easy and actually exciting. Within weeks, we had
+                                    automations in place that saved our team dozens of hours and reduced errors
+                                    dramatically. Worth every penny."</p>
+                                <div class="review-author">
+                                    <img src="./assets/people/marc.jpg" alt="Marc Fontanals" class="review-avatar"
+                                        loading="lazy" width="48" height="48">
+                                    <div class="review-author-info">
+                                        <div class="review-author-name">Marc Fontanals</div>
+                                        <div class="review-author-company">Booster Crypto</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Review 3 -->
+                            <div class="review-card">
+                                <div class="review-stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                                <p class="review-text">"Ethan automated my entire operation and unlocked true
+                                    scalability. What used to bottleneck at my capacity now runs automatically: lead
+                                    capture, onboarding, communications, fulfillment, invoicing. I'm handling 3x the
+                                    volume without working longer hours or hiring additional staff. This transformed my
+                                    business from trading time for money into a genuinely scalable operation."</p>
+                                <div class="review-author">
+                                    <img src="./assets/people/diego.jpg" alt="Diego Salete" class="review-avatar"
+                                        loading="lazy" width="48" height="48">
+                                    <div class="review-author-info">
+                                        <div class="review-author-name">Diego Salete</div>
+                                        <div class="review-author-company">Boosting Brands</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Review 5 -->
+                            <div class="review-card">
+                                <div class="review-stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                                <p class="review-text">"Ethan, is extremely knowledgeable and helped me in record time
+                                    with my automation concern."</p>
+                                <div class="review-author">
+                                    <img src="./assets/people/rebbecca.jpeg" alt="Rebbecca Hemmings"
+                                        class="review-avatar" loading="lazy" width="48" height="48">
+                                    <div class="review-author-info">
+                                        <div class="review-author-name">Rebbecca Hemmings</div>
+                                        <div class="review-author-company">Strawberry Words</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Duplicate for seamless loop -->
+                            <div class="review-card">
+                                <div class="review-stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                                <p class="review-text">"We knew we needed better systems but didn't know where to start.
+                                    Natural made the process easy and actually exciting. Within weeks, we had
+                                    automations in place that saved our team dozens of hours and reduced errors
+                                    dramatically. Worth every penny."</p>
+                                <div class="review-author">
+                                    <img src="./assets/people/marc.jpg" alt="Marc Fontanals" class="review-avatar"
+                                        loading="lazy" width="48" height="48">
+                                    <div class="review-author-info">
+                                        <div class="review-author-name">Marc Fontanals</div>
+                                        <div class="review-author-company">Booster Crypto</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="review-card">
+                                <div class="review-stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                                <p class="review-text">"Ethan automated my entire operation and unlocked true
+                                    scalability. What used to bottleneck at my capacity now runs automatically: lead
+                                    capture, onboarding, communications, fulfillment, invoicing. I'm handling 3x the
+                                    volume without working longer hours or hiring additional staff. This transformed my
+                                    business from trading time for money into a genuinely scalable operation."</p>
+                                <div class="review-author">
+                                    <img src="./assets/people/diego.jpg" alt="Diego Salete" class="review-avatar"
+                                        loading="lazy" width="48" height="48">
+                                    <div class="review-author-info">
+                                        <div class="review-author-name">Diego Salete</div>
+                                        <div class="review-author-company">Boosting Brands</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="review-card">
+                                <div class="review-stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                                <p class="review-text">"Ethan, is extremely knowledgeable and helped me in record time
+                                    with my automation concern."</p>
+                                <div class="review-author">
+                                    <img src="./assets/people/rebbecca.jpeg" alt="Rebbecca Hemmings"
+                                        class="review-avatar" loading="lazy" width="48" height="48">
+                                    <div class="review-author-info">
+                                        <div class="review-author-name">Rebbecca Hemmings</div>
+                                        <div class="review-author-company">Strawberry Words</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reviews-column reviews-column-right">
+                        <div class="reviews-track reviews-track-down">
+                            <!-- Review 2 -->
+                            <div class="review-card">
+                                <div class="review-stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                                <p class="review-text">"I was spending more time on admin than teaching. Ethan automated
+                                    my entire sales process and CRM—now enrollments, follow-ups, and client management
+                                    happen seamlessly in the background. I've reclaimed 15+ hours weekly and my
+                                    conversion rates actually improved. Best investment I've made in my business."</p>
+                                <div class="review-author">
+                                    <img src="./assets/people/patricia.jpeg" alt="Patricia Ethane" class="review-avatar"
+                                        loading="lazy" width="48" height="48">
+                                    <div class="review-author-info">
+                                        <div class="review-author-name">Patricia Ethane</div>
+                                        <div class="review-author-company">DevAccelerator</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Review 4 -->
+                            <div class="review-card">
+                                <div class="review-stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                                <p class="review-text">"Really great to work with. Was able to action the project
+                                    promptly and work with me so I could make any future amendments to the automation if
+                                    I needed to. Highly recommend."</p>
+                                <div class="review-author">
+                                    <img src="./assets/people/liz.jpeg" alt="Liz Patient" class="review-avatar"
+                                        loading="lazy" width="48" height="48">
+                                    <div class="review-author-info">
+                                        <div class="review-author-name">Liz Patient</div>
+                                        <div class="review-author-company">Pilates for runners</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Review 6 -->
+                            <div class="review-card">
+                                <div class="review-stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                                <p class="review-text">"Ethan built my automation in record time without cutting
+                                    corners.
+                                    What I expected to take weeks was done in days, and it's been running flawlessly
+                                    ever since. No bugs, no downtime, just reliable automation that works exactly as
+                                    promised. Finally found someone who delivers quality at speed."</p>
+                                <div class="review-author">
+                                    <img src="./assets/people/mika.jpeg" alt="Mika Ghica" class="review-avatar"
+                                        loading="lazy" width="48" height="48">
+                                    <div class="review-author-info">
+                                        <div class="review-author-name">Mika Ghica</div>
+                                        <div class="review-author-company">Kuestiona</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Duplicate for seamless loop -->
+                            <div class="review-card">
+                                <div class="review-stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                                <p class="review-text">"I was spending more time on admin than teaching. Ethan automated
+                                    my entire sales process and CRM—now enrollments, follow-ups, and client management
+                                    happen seamlessly in the background. I've reclaimed 15+ hours weekly and my
+                                    conversion rates actually improved. Best investment I've made in my business."</p>
+                                <div class="review-author">
+                                    <img src="./assets/people/patricia.jpeg" alt="Patricia Ethane" class="review-avatar"
+                                        loading="lazy" width="48" height="48">
+                                    <div class="review-author-info">
+                                        <div class="review-author-name">Patricia Ethane</div>
+                                        <div class="review-author-company">DevAccelerator</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="review-card">
+                                <div class="review-stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                                <p class="review-text">"Really great to work with. Was able to action the project
+                                    promptly and work with me so I could make any future amendments to the automation if
+                                    I needed to. Highly recommend."</p>
+                                <div class="review-author">
+                                    <img src="./assets/people/liz.jpeg" alt="Liz Patient" class="review-avatar"
+                                        loading="lazy" width="48" height="48">
+                                    <div class="review-author-info">
+                                        <div class="review-author-name">Liz Patient</div>
+                                        <div class="review-author-company">Pilates for runners</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="review-card">
+                                <div class="review-stars">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                                <p class="review-text">"Ethan built my automation in record time without cutting
+                                    corners.
+                                    What I expected to take weeks was done in days, and it's been running flawlessly
+                                    ever since. No bugs, no downtime, just reliable automation that works exactly as
+                                    promised. Finally found someone who delivers quality at speed."</p>
+                                <div class="review-author">
+                                    <img src="./assets/people/mika.jpeg" alt="Mika Ghica" class="review-avatar"
+                                        loading="lazy" width="48" height="48">
+                                    <div class="review-author-info">
+                                        <div class="review-author-name">Mika Ghica</div>
+                                        <div class="review-author-company">Kuestiona</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- CTA -->
+        <section class="section-cta" id="contact">
+            <div class="container cta-inner">
+                <div>
+                    <h2 class="cta-title">Scale Your Business Without Scaling Your Workload</h2>
+                    <p class="section-subtitle">Book a free consultation and we'll show you exactly where automation can
+                        transform your business.</p>
+                    <ul class="trust-badges">
+                        <li>No obligations</li>
+                        <li>Free consultation</li>
+                        <li>Custom strategy</li>
+                    </ul>
+                </div>
+                <div class="cal-embed-container">
+                    <!-- Calendly inline widget begin -->
+                    <div class="calendly-inline-widget"
+                        data-url="https://calendly.com/ezj/strategy-session?utm_source=website&utm_medium=embed&utm_campaign=widget"
+                        style="min-width:320px;height:700px;"></div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"
+                        async></script>
+                    <!-- Calendly inline widget end -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">EZJ Online</div>
+            <div class="footer-meta">
+                <a href="mailto:ethan@ezjonline.com">ethan@ezjonline.com</a>
+                <div class="socials">
+                    <!-- Add socials when ready -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./scripts.js" defer></script>
+</body>
+
+</html>

@@ -2,46 +2,51 @@
 const dynamicTextElement = document.getElementById('dynamic-text');
 if (dynamicTextElement) {
   const words = [
-    'Busywork',
-    'Bottlenecks',
-    'Friction',
-    'Waste',
-    'Overhead',
-    'Complexity'
+    'Online',
+    'Automatically',
+    'Effortlessly',
+    'Intelligently',
+    'Globally',
+    'Strategically',
+    'Systematically',
+    'Intentionally',
+    'Profitably',
+    'Sustainably'
   ];
-  
+
   let wordIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
-  
+
   function typeText() {
     const currentWord = words[wordIndex];
     let speed = 100;
-    
+
     if (isDeleting) {
       dynamicTextElement.textContent = currentWord.substring(0, charIndex - 1);
       charIndex--;
-      speed = 30 + Math.random() * 20; // Variable speed for natural feel
+      // Deletion speed: ~0.8s total for average word (800ms / ~10 chars = 80ms per char)
+      speed = 80;
     } else {
       const currentChar = currentWord[charIndex];
       dynamicTextElement.textContent = currentWord.substring(0, charIndex + 1);
       charIndex++;
-      // Variable typing speed - slightly faster for most chars, slower occasionally for natural feel
-      speed = currentChar === ' ' ? 150 : 80 + Math.random() * 40;
+      // Typing speed: ~1.2s total for average word (1200ms / ~10 chars = 120ms per char)
+      speed = 120;
     }
-    
+
     if (!isDeleting && charIndex === currentWord.length) {
-      speed = 2500; // Pause before deleting
+      speed = 2000; // Pause to read the word
       isDeleting = true;
     } else if (isDeleting && charIndex === 0) {
       isDeleting = false;
       wordIndex = (wordIndex + 1) % words.length;
-      speed = 800; // Pause before typing next word
+      speed = 500; // Brief pause before typing next word
     }
-    
+
     setTimeout(typeText, speed);
   }
-  
+
   // Start the typing effect
   typeText();
 }
