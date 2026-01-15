@@ -1645,7 +1645,7 @@ body {
   box-shadow: 0 0 20px rgba(244, 124, 32, 0.25), 0 0 35px rgba(244, 124, 32, 0.15);
 }
 
-.cal-embed-container #my-cal-inline-15min {
+.cal-embed-container #my-cal-inline-strategy-session {
   min-height: 600px;
   height: 600px;
   width: 100% !important;
@@ -1665,33 +1665,33 @@ body {
 }
 
 /* Custom scrollbar styling for Cal.com embed */
-.cal-embed-container #my-cal-inline-15min::-webkit-scrollbar {
+.cal-embed-container #my-cal-inline-strategy-session::-webkit-scrollbar {
   width: 8px;
 }
 
-.cal-embed-container #my-cal-inline-15min::-webkit-scrollbar-track {
+.cal-embed-container #my-cal-inline-strategy-session::-webkit-scrollbar-track {
   background: transparent;
   border-radius: 0 20px 20px 0;
   margin: 0;
   border-left: none;
 }
 
-.cal-embed-container #my-cal-inline-15min::-webkit-scrollbar-thumb {
+.cal-embed-container #my-cal-inline-strategy-session::-webkit-scrollbar-thumb {
   background: rgba(244, 124, 32, 0.4);
   border-radius: 0 20px 20px 0;
 }
 
-.cal-embed-container #my-cal-inline-15min::-webkit-scrollbar-thumb:hover {
+.cal-embed-container #my-cal-inline-strategy-session::-webkit-scrollbar-thumb:hover {
   background: rgba(244, 124, 32, 0.6);
 }
 
-.cal-embed-container #my-cal-inline-15min {
+.cal-embed-container #my-cal-inline-strategy-session {
   scrollbar-width: thin;
   scrollbar-color: rgba(244, 124, 32, 0.4) transparent;
 }
 
-.cal-embed-container #my-cal-inline-15min>*,
-.cal-embed-container #my-cal-inline-15min>*>* {
+.cal-embed-container #my-cal-inline-strategy-session>*,
+.cal-embed-container #my-cal-inline-strategy-session>*>* {
   width: 100% !important;
   max-width: 100% !important;
   box-sizing: border-box !important;
@@ -1729,8 +1729,8 @@ body {
   padding-left: 0 !important;
 }
 
-.cal-embed-container #my-cal-inline-15min>div,
-.cal-embed-container #my-cal-inline-15min>div>* {
+.cal-embed-container #my-cal-inline-strategy-session>div,
+.cal-embed-container #my-cal-inline-strategy-session>div>* {
   border-radius: 20px !important;
   overflow: hidden;
   margin-left: 0 !important;
@@ -1739,7 +1739,7 @@ body {
 
 /* Cal.com embed mobile adjustments */
 @media (max-width: 768px) {
-  .cal-embed-container #my-cal-inline-15min {
+  .cal-embed-container #my-cal-inline-strategy-session {
     height: 500px !important;
     overflow-x: hidden !important;
     -webkit-overflow-scrolling: touch;
@@ -1747,13 +1747,13 @@ body {
 }
 
 @media (max-width: 640px) {
-  .cal-embed-container #my-cal-inline-15min {
+  .cal-embed-container #my-cal-inline-strategy-session {
     height: 450px !important;
   }
 }
 
 @media (max-width: 480px) {
-  .cal-embed-container #my-cal-inline-15min {
+  .cal-embed-container #my-cal-inline-strategy-session {
     height: 400px !important;
   }
 }
